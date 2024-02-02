@@ -1,4 +1,4 @@
-module alexejk.io/go-xmlrpc
+module github.com/xplodwild/go-xmlrpc
 
 go 1.21
 
