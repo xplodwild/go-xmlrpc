@@ -168,7 +168,7 @@ func (d *StdDecoder) decodeValue(value *ResponseValue, field reflect.Value) erro
 			field.Set(rVal)
 		} else {
 			if !rVal.Type().ConvertibleTo(field.Type()) {
-				return fmt.Errorf("type '%s' cannot be assigned a value of type '%s'", field.Type().String(), rVal.Type().String())
+				//return fmt.Errorf("type '%s' cannot be assigned a value of type '%s'", field.Type().String(), rVal.Type().String())
 			}
 
 			field.Set(rVal.Convert(field.Type()))
